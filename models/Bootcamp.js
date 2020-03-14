@@ -17,7 +17,7 @@ const BootcampSchema = new mongoose.Schema({
     website: {
         type: String,
         match: [
-            /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/gm,
+            /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/,
             'Please use a valid URL with HTTP or HTTPS'
         ]
     },
